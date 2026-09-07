@@ -751,7 +751,9 @@ h1 span {
 
 .contact-form textarea {
     height: 130px;
+    max-width: 100%;
     resize: none;
+    overflow-y: auto;
 }
 
 .contact-form input::placeholder,

@@ -397,6 +397,11 @@ h2 em {
     color: var(--ink)
 }
 
+.booking-form textarea {
+    max-width: 100%;
+    resize: none;
+}
+
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
