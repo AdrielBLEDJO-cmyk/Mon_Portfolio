@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier | Mobilier des Frères BLEDJO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- En-tete et navigation du panier -->
+    <header class="site-header"><a class="logo" href="index.html">Mobilier des <span>Frères BLEDJO</span></a>
+        <nav aria-label="Navigation principale"><a href="index.html">Accueil</a><a
+                href="collection.html">Collection</a><a class="active" href="panier.html">Panier <b
+                    class="cart-count">0</b></a></nav><a class="header-link" href="collection.html">Continuer mes achats
+            <span>↗</span></a>
+    </header>
+    <main>
+        <!-- Articles selectionnes et recapitulatif de commande -->
+        <section class="cart-page shell">
+            <div class="page-intro"><span class="section-label">Votre sélection</span>
+                <h1>Le panier<br><em>prend forme.</em></h1>
+            </div>
+            <div class="cart-layout">
+                <div id="cart-items" class="cart-items"></div>
+                <aside class="cart-summary"><span class="section-label">Récapitulatif</span>
+                    <div class="summary-row"><span>Sous-total</span><strong id="cart-total">0 F</strong></div>
+                    <p>Livraison calculée lors de la confirmation de la commande.</p><a class="button button-dark"
+                        href="https://wa.me/2250701020304?text=Bonjour%2C%20je%20souhaite%20commander%20les%20articles%20de%20mon%20panier."
+                        target="_blank" rel="noopener">Commander via WhatsApp <span>↗</span></a>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="footer shell"><span>Mobilier des Frères BLEDJO</span><span>Abidjan · Livraison en Côte
+            d'Ivoire</span><a href="../../index.html">Portfolio du créateur ↗</a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

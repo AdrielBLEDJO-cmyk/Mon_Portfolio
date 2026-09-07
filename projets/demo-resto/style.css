@@ -1,0 +1,501 @@
+/* Variables visuelles du restaurant */
+:root {
+    --ink: #30251d;
+    --cream: #f7f0e6;
+    --paper: #fffaf3;
+    --orange: #d85f35;
+    --gold: #e6ab54;
+    --muted: #806f61;
+    --line: rgba(48, 37, 29, .16);
+    --display: 'Playfair Display', serif;
+    --body: 'DM Sans', sans-serif
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.6
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.shell {
+    width: min(1160px, calc(100% - 80px));
+    margin-inline: auto
+}
+
+/* En-tete, logo et navigation */
+.site-header {
+    width: min(1160px, calc(100% - 80px));
+    height: 88px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line)
+}
+
+.logo {
+    font-family: var(--display);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: .8
+}
+
+.logo span {
+    color: var(--orange);
+    font-size: 14px;
+    letter-spacing: .17em
+}
+
+.site-header nav {
+    display: flex;
+    gap: 34px;
+    font-size: 13px
+}
+
+.site-header nav a {
+    padding: 30px 0;
+    border-bottom: 2px solid transparent
+}
+
+.site-header nav .active {
+    border-color: var(--orange);
+    color: var(--orange)
+}
+
+.header-cta {
+    font-size: 12px;
+    font-weight: 700
+}
+
+.header-cta span,
+.button span {
+    color: var(--gold);
+    font-size: 18px;
+    margin-left: 10px
+}
+
+/* Hero et elements d'appel a l'action */
+.hero {
+    width: min(1240px, calc(100% - 40px));
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 85px 20px 105px
+}
+
+.hero-copy {
+    max-width: 570px
+}
+
+.eyebrow,
+.section-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    color: var(--orange)
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    line-height: 1.05
+}
+
+h1 {
+    font-size: clamp(50px, 6vw, 82px);
+    margin: 22px 0 28px;
+    letter-spacing: -.04em
+}
+
+h2 {
+    font-size: clamp(38px, 4.8vw, 65px);
+    margin: 18px 0 24px;
+    letter-spacing: -.035em
+}
+
+h1 em,
+h2 em {
+    color: var(--orange);
+    font-style: italic
+}
+
+.hero-copy>p:not(.eyebrow) {
+    max-width: 450px;
+    color: var(--muted);
+    font-size: 17px
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 35px
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 15px 20px;
+    border: 0;
+    font: 700 12px var(--body);
+    cursor: pointer
+}
+
+.button-dark {
+    background: var(--ink);
+    color: var(--paper)
+}
+
+.button-dark:hover {
+    background: var(--orange)
+}
+
+.button-light {
+    background: var(--gold);
+    color: var(--ink)
+}
+
+.under-link {
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 5px
+}
+
+.hero-image {
+    position: relative
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 540px;
+    object-fit: cover
+}
+
+.image-note {
+    position: absolute;
+    right: -20px;
+    bottom: 30px;
+    background: var(--gold);
+    padding: 16px 20px;
+    font: 600 14px var(--display);
+    line-height: 1.25
+}
+
+/* Presentation de la maison et plats signatures */
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 70px;
+    border-top: 1px solid var(--line);
+    padding-block: 105px
+}
+
+.welcome p {
+    max-width: 540px;
+    color: var(--muted);
+    margin-bottom: 28px
+}
+
+.signature {
+    padding-bottom: 110px
+}
+
+.signature>.section-label {
+    display: block;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 40px
+}
+
+.dish-grid article {
+    position: relative
+}
+
+.dish-grid img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px
+}
+
+.dish-grid article>span {
+    color: var(--orange);
+    font-size: 11px
+}
+
+.dish-grid h3 {
+    font-size: 27px;
+    margin: 9px 0
+}
+
+.dish-grid p {
+    color: var(--muted);
+    font-size: 13px
+}
+
+/* Bloc de reservation */
+.booking {
+    background: var(--ink);
+    color: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 65px;
+    margin-bottom: 85px
+}
+
+.booking h2 {
+    margin: 14px 0 0
+}
+
+.footer {
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block: 26px 35px;
+    font-size: 11px;
+    color: var(--muted)
+}
+
+.footer a {
+    color: var(--orange)
+}
+
+.page-intro {
+    padding: 90px 0 70px;
+    border-bottom: 1px solid var(--line)
+}
+
+.page-intro h1 {
+    margin-bottom: 20px
+}
+
+.page-intro>p:last-child {
+    color: var(--muted);
+    max-width: 440px
+}
+
+/* Carte des plats et formulaire */
+.menu {
+    padding-block: 75px 100px
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: .8fr 1.5fr;
+    gap: 80px;
+    padding-block: 42px;
+    border-bottom: 1px solid var(--line)
+}
+
+.menu-group h2 {
+    font-size: 40px
+}
+
+.menu-items article {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid var(--line);
+    padding: 0 0 19px;
+    margin-bottom: 24px
+}
+
+.menu-items h3 {
+    font-size: 22px;
+    margin: 0 0 5px
+}
+
+.menu-items p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0
+}
+
+.menu-items strong {
+    white-space: nowrap;
+    color: var(--orange);
+    font: 600 15px var(--display)
+}
+
+.reservation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+    padding: 100px 0
+}
+
+.reservation-copy>p:not(.eyebrow) {
+    color: var(--muted);
+    max-width: 410px
+}
+
+.contact-details {
+    display: grid;
+    gap: 8px;
+    border-top: 1px solid var(--line);
+    margin-top: 45px;
+    padding-top: 20px;
+    color: var(--muted);
+    font-size: 13px
+}
+
+.booking-form {
+    display: grid;
+    gap: 20px;
+    background: var(--cream);
+    padding: 38px
+}
+
+.booking-form label {
+    display: grid;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    padding: 13px;
+    background: var(--paper);
+    font: 14px var(--body);
+    color: var(--ink)
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px
+}
+
+.form-note {
+    color: var(--orange);
+    font-size: 12px;
+    margin: 0
+}
+
+/* Adaptation aux petits ecrans */
+@media(max-width:760px) {
+
+    .shell,
+    .site-header {
+        width: calc(100% - 40px)
+    }
+
+    .site-header {
+        height: auto;
+        padding: 22px 0;
+        flex-wrap: wrap;
+        gap: 14px
+    }
+
+    .site-header nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px
+    }
+
+    .site-header nav a {
+        padding: 5px 0
+    }
+
+    .header-cta {
+        display: none
+    }
+
+    .hero,
+    .reservation {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding-block: 60px 75px
+    }
+
+    .hero {
+        width: calc(100% - 40px);
+        padding-inline: 0
+    }
+
+    .hero-image img {
+        height: 390px
+    }
+
+    .image-note {
+        right: -10px
+    }
+
+    .welcome,
+    .menu-group {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-block: 65px
+    }
+
+    .dish-grid {
+        grid-template-columns: 1fr;
+        gap: 45px
+    }
+
+    .dish-grid img {
+        height: 330px
+    }
+
+    .booking {
+        margin-inline: 20px;
+        padding: 38px 25px;
+        display: grid;
+        gap: 30px
+    }
+
+    .footer {
+        display: grid;
+        gap: 8px
+    }
+
+    .page-intro {
+        padding-top: 65px
+    }
+
+    .reservation {
+        padding-top: 65px
+    }
+
+    .booking-form {
+        padding: 25px
+    }
+}

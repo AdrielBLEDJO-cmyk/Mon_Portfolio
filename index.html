@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de BLEDJO Gagnié Adriel, étudiant en Informatique Développeur d'Applications et admissible au BTS en Côte d'Ivoire.">
+    <title>BLEDJO Gagnié Adriel — Développeur d'applications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="noise" aria-hidden="true"></div>
+    <!-- En-tete et navigation principale -->
+    <header class="site-header" id="top">
+        <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+            <span class="brand-text"><strong>BLEDJO</strong>
+                <br>Gagnié Adriel</span>
+        </a>
+        <input class="menu-check" type="checkbox" id="menu-check">
+        <label class="menu-toggle" for="menu-check" aria-label="Ouvrir le menu"><span></span><span></span></label>
+        <nav class="nav-links" aria-label="Navigation principale">
+            <a class="is-current" href="index.html">Accueil</a>
+            <a href="profil.html">Profil</a>
+            <a href="projets.html">Projets</a>
+            <a href="competences.html">Compétences</a>
+            <a class="nav-contact" href="contact.html">Me contacter <span>↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Presentation principale et photo de profil -->
+        <section class="hero section-shell" id="accueil">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Disponible pour un stage</p>
+                <h1>Je construis des<br><em>sites web</em></h1>
+                <p class="hero-intro">Étudiant en Informatique Développeur d'Applications, je conçois des expériences
+                    web utiles, claires et pensées pour les personnes qui les utilisent.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="projets.html">Découvrir mes projets <span>↓</span></a>
+                    <a class="text-link" href="contact.html">Parlons de votre besoin <span>↗</span></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img class="profile-photo" src="photo-profil/profil.jpg" alt="Portrait de BLEDJO Gagnié Adriel">
+            </div>
+            <div class="scroll-cue"><span></span> Faites défiler</div>
+        </section>
+
+        <!-- Resume du profil -->
+        <section class="intro-band section-shell" id="profil">
+            <div class="section-kicker">// À propos //</div>
+            <div class="intro-content">
+                <h2>Un esprit curieux,<br><span>une approche concrète.</span></h2>
+                <div class="intro-text">
+                    <p>Je m'appelle <strong>BLEDJO Gagnié Adriel</strong>, je suis étudiant en IDA en Côte d'Ivoire.
+                        Après mon admissibilité au BTS, je cherche une entreprise où mettre ma rigueur et ma curiosité
+                        au service de projets réels.</p>
+                    <p>J'aime comprendre un besoin, le structurer et le transformer en une interface simple, rapide et
+                        agréable à utiliser. Chaque projet est pour moi une occasion d'apprendre et de progresser.</p>
+                    <a class="arrow-link" href="profil.html">En savoir plus sur mon parcours <span>↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets mis en avant -->
+        <section class="projects section-shell" id="projets">
+            <div class="section-heading">
+                <div>
+                    <div class="section-kicker">// Sélection //</div>
+                    <h2>Des projets qui<br><em>prennent vie.</em></h2>
+                </div>
+                <p>Quelques réalisations qui témoignent de ma manière de réfléchir, de concevoir et de construire.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card project-card-main">
+                    <div class="project-image project-photo"><span class="image-tag">Projet web · Restaurant</span><img
+                            src="projets/demo-resto/images-demo-resto/Poisson braisé & riz gras.jpeg"
+                            alt="Poisson braisé et riz gras du site Le Resto de Mme BLEDJO"></div>
+                    <div class="project-info">
+                        <div><span class="project-number">Projet démo 01</span>
+                            <h3>Le Resto de<br>Mme BLEDJO</h3>
+                        </div>
+                        <p>Un site vitrine chaleureux pour présenter un restaurant ivoirien, son menu et ses
+                            informations.</p>
+                    </div>
+                    <div class="project-tags"><span>HTML / CSS</span><a href="projets/demo-resto/index.html"
+                            target="_blank" rel="noopener">Voir le site
+                            ↗</a></div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image project-photo"><span class="image-tag">Projet web · Mobilier</span><img
+                            src="projets/demo-meubles/images-demo-meubles/Salon de maison.webp"
+                            alt="Mobilier présenté sur le site Mobilier des Frères BLEDJO"></div>
+                    <div class="project-info">
+                        <div><span class="project-number">Projet démo 02</span>
+                            <h3>Mobilier des<br>Frères BLEDJO</h3>
+                        </div>
+                        <p>Une boutique en ligne pour découvrir une collection de meubles et gérer un panier.</p>
+                    </div>
+                    <div class="project-tags"><span>HTML / CSS</span><span>JavaScript</span><a
+                            href="projets/demo-meubles/index.html" target="_blank" rel="noopener">Voir le site ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Competences techniques et qualites -->
+        <section class="skills section-shell" id="competences">
+            <div class="section-kicker">// Boîte à outils //</div>
+            <div class="skills-layout">
+                <h2>Les outils pour<br><em>bien faire.</em></h2>
+                <div class="skills-list">
+                    <div class="skill-row"><span class="skill-index">01</span>
+                        <div>
+                            <h3>Front-end</h3>
+                            <p>HTML5 · CSS3 · JavaScript</p>
+                        </div><span class="skill-arrow">↗</span>
+                    </div>
+                    <div class="skill-row"><span class="skill-index">02</span>
+                        <div>
+                            <h3>Back-end</h3>
+                            <p>Notions de Python · C · PHP · MySQL</p>
+                        </div><span class="skill-arrow">↗</span>
+                    </div>
+                    <div class="skill-row"><span class="skill-index">03</span>
+                        <div>
+                            <h3>Outils de production</h3>
+                            <p>Git · VS Code · GitHub · Bases de données</p>
+                        </div><span class="skill-arrow">↗</span>
+                    </div>
+                    <div class="skill-row"><span class="skill-index">04</span>
+                        <div>
+                            <h3>Outils IA</h3>
+                            <p>ChatGPT · Claude · GitHubCopilot · DeepSeek</p>
+                        </div><span class="skill-arrow">↗</span>
+                    </div>
+                    <div class="skill-row"><span class="skill-index">05</span>
+                        <div>
+                            <h3>Qualités humaines</h3>
+                            <p>Curiosité · Rigueur · Esprit d'équipe · Adaptabilité · Créativité · Apprentissage rapide
+                                · Organisation · Résolution de problèmes · Communication · Persévérance</p>
+                        </div><span class="skill-arrow">↗</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appel à la prise de contact -->
+        <section class="contact section-shell" id="contact">
+            <div class="contact-top">
+                <div class="section-kicker">// Contact //</div><span class="contact-note">Un stage peut être le
+                    début<br>d'une belle collaboration.</span>
+            </div>
+            <div class="contact-main">
+                <h2>Construisons<br><em>quelque chose.</em></h2><a class="email-link" href="contact.html">Écrivez-moi
+                    <span>↗</span></a>
+            </div>
+            <div class="contact-bottom">
+                <div><span class="mini-label">Retrouvez-moi</span>
+                    <div class="socials"><a href="https://www.linkedin.com/in/adrielbledjo" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/AdrielBLEDJO-cmyk"
+                            target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                </div>
+                <div><span class="mini-label">Localisation</span>
+                    <p>Abobo, Abidjan, Côte d'Ivoire</p>
+                </div><a class="button button-light" href="mailto:bledjog@gmail.com">Envoyer un message
+                    <span>↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-shell"><span>© 2026 BLEDJO Gagnié Adriel</span><span>On ne finit jamais
+            d'apprendre</span><a href="#top">Retour en haut ↑</a></footer>
+</body>
+
+</html>

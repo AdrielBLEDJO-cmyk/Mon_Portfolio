@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver | Le Resto de Mme BLEDJO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- En-tete et navigation de la reservation -->
+    <header class="site-header">
+        <a class="logo" href="index.html">Le Resto de <span>Mme BLEDJO</span></a>
+        <nav aria-label="Navigation principale">
+            <a href="index.html">Accueil</a>
+            <a href="carte.html">La carte</a>
+            <a class="active" href="reservation.html">Réserver</a>
+        </nav>
+        <a class="header-cta" href="reservation.html">Une table <span>↗</span></a>
+    </header>
+    <main>
+        <!-- Coordonnees du restaurant et formulaire de reservation -->
+        <section class="reservation shell">
+            <div class="reservation-copy">
+                <p class="eyebrow">** Un moment à partager **</p>
+                <h1>Réservez votre<br><em>table.</em></h1>
+                <p>Remplissez ce formulaire et notre équipe vous confirmera votre réservation par téléphone.</p>
+                <div class="contact-details"><span>+225 07 01 02 03 04</span><span>Abobo, Abidjan</span><span>Lun–Sam ·
+                        11h à 23h</span></div>
+            </div>
+            <form class="booking-form" action="#confirmation">
+                <label>Votre nom<input type="text" name="name" placeholder="Ex. Adriel BLEDJO" required></label>
+                <div class="form-row"><label>Date<input type="date" name="date" required></label><label>Heure<input
+                            type="time" name="time" required></label></div>
+                <label>Nombre de personnes<select name="guests">
+                        <option>2 personnes</option>
+                        <option>3 personnes</option>
+                        <option>4 personnes</option>
+                        <option>5 personnes ou plus</option>
+                    </select></label>
+                <label>Une précision ?<textarea name="message" rows="4"
+                        placeholder="Anniversaire, préférence de table..."></textarea></label>
+                <button class="button button-dark" type="submit">Envoyer la demande <span>↗</span></button>
+                <p id="confirmation" class="form-note">Merci ! Votre demande est prête à être confirmée par notre
+                    équipe.</p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer shell"><span>Le Resto de Mme BLEDJO</span><span>Abobo, Abidjan · Lun–Sam, 11h–23h</span><a
+            href="../../index.html">Portfolio du créateur ↗</a></footer>
+</body>
+
+</html>

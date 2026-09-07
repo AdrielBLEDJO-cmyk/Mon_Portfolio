@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacter BLEDJO Gagnié Adriel pour une opportunité de stage.">
+    <title>Contact — BLEDJO Gagnié Adriel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="noise" aria-hidden="true"></div>
+    <!-- En-tete et navigation principale -->
+    <header class="site-header" id="top"><a class="brand" href="index.html" aria-label="Retour à l'accueil"><span
+                class="brand-text"><strong> BLEDJO </strong>
+                <br>Gagnié Adriel</span></a><input class="menu-check" type="checkbox" id="menu-check"><label
+            class="menu-toggle" for="menu-check" aria-label="Ouvrir le menu"><span></span><span></span></label>
+        <nav class="nav-links" aria-label="Navigation principale"><a href="index.html">Accueil</a><a
+                href="profil.html">Profil</a><a href="projets.html">Projets</a><a
+                href="competences.html">Compétences</a><a class="nav-contact is-current" href="contact.html">Me
+                contacter <span>↗</span></a></nav>
+    </header>
+    <main>
+        <!-- Introduction de la page contact -->
+        <section class="page-hero section-shell contact-page-hero">
+            <div class="section-kicker">// Contact //</div>
+            <h1>Parlons de votre<br><em>prochain projet.</em></h1>
+            <p>Vous recherchez un stagiaire motivé ? Je serais heureux d'échanger avec
+                vous.</p>
+        </section>
+        <!-- Coordonnees et moyens de contact -->
+        <section class="contact-layout section-shell">
+            <div class="contact-details"><span class="mini-label">Me joindre directement</span>
+                <a class="email-link" href="mailto:bledjog@gmail.com">bledjog@gmail.com</a>
+                <a class="phone-link whatsapp-link" href="https://wa.me/2250575067598" target="_blank"
+                    rel="noopener noreferrer">Écrire sur WhatsApp <span>↗</span></a>
+                <div class="detail-block"><span class="mini-label">Localisation</span>
+                    <p>Abobo, Abidjan, Côte d'Ivoire</p>
+                </div>
+            </div>
+            <form class="contact-form" action="https://formsubmit.co/bledjog@gmail.com" method="post">
+                <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+                <label for="contact-name">Nom</label>
+                <input id="contact-name" name="nom" type="text" placeholder="Votre nom" required>
+                <label for="contact-email">Adresse email</label>
+                <input id="contact-email" name="email" type="email" placeholder="abc@gmail.com" required>
+                <label for="contact-subject">Sujet</label>
+                <input id="contact-subject" name="sujet" type="text" placeholder="Proposition de stage" required>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" placeholder="Décrivez votre besoin..."
+                    required></textarea>
+                <button class="button button-primary" type="submit">Envoyer le message <span>↗</span></button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer section-shell"><span>© 2026 Bledjo Gagnié Adriel</span><span>on ne finit jamais
+            d'apprendre</span><a href="#top">Retour en haut ↑</a></footer>
+</body>
+
+</html>
