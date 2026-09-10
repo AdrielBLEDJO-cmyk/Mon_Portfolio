@@ -104,6 +104,7 @@ a {
     border: 0;
     background: transparent;
     padding: 10px;
+    cursor: pointer;
 }
 
 .menu-check {
@@ -749,6 +750,11 @@ h1 span {
     letter-spacing: 0;
 }
 
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+    box-shadow: 0 2px 0 var(--coral);
+}
+
 .contact-form textarea {
     height: 130px;
     max-width: 100%;
@@ -892,6 +898,11 @@ h1 span {
         display: flex;
     }
 
+    .menu-check:focus-visible + .menu-toggle {
+        outline: 3px solid var(--coral);
+        outline-offset: 3px;
+    }
+
     .nav-contact {
         border-left: 0;
         padding-left: 0;
@@ -957,6 +968,7 @@ h1 span {
     .project-card-main .project-image,
     .project-image {
         height: 240px;
+        width: 100%;
         aspect-ratio: 4 / 3;
     }
 
@@ -989,6 +1001,10 @@ h1 span {
         padding: 65px 0 75px;
     }
 
+    .contact h2 {
+        font-size: clamp(36px, 12vw, 70px);
+    }
+
     .contact-top,
     .contact-bottom {
         display: block;
@@ -1019,6 +1035,24 @@ h1 span {
 
     .page-hero {
         padding-block: 70px 75px;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(42px, 14vw, 70px);
+    }
+
+    .story-grid {
+        display: block;
+        padding-top: 32px;
+    }
+
+    .contact-layout {
+        display: block;
+        padding-block: 65px 85px;
+    }
+
+    .contact-details {
+        margin-bottom: 65px;
     }
 
     .page-hero h1 {
@@ -1064,6 +1098,20 @@ h1 span {
     .timeline-item {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
 
